@@ -44,8 +44,11 @@ body {
 	opacity: 1;
 	transition: 0.5s opacity;
 	hyphens: auto;
-	cursor: url(/img/cursor.svg), auto;
+	cursor: nw-resize;
 }
+
+li, li a:hover {
+	cursor: se-resize;
 }
 
 body.fade-out {
