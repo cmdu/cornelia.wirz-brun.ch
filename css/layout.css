@@ -1,0 +1,244 @@
+/* general */
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+body {
+	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/* additional fonts 
+
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+
+*/
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=a978bf93-2b4c-49b5-9f8c-7d929d2e547c");
+@font-face{
+	font-family:"GaramondPrmrW01-LtDspl";
+	src:url("Fonts/af9161e5-0b13-4b71-927d-770bec834cea.eot?#iefix");
+	src:url("Fonts/af9161e5-0b13-4b71-927d-770bec834cea.eot?#iefix") format("eot"),url("Fonts/3cd8b8fc-52bd-41e4-be79-9ee4e974ba5f.woff2") format("woff2"),url("Fonts/2b7c1b22-7378-4dc5-8805-a5fddd317371.woff") format("woff"),url("Fonts/e57b8dda-b8aa-4da5-a7aa-49237ae80e77.ttf") format("truetype"),url("Fonts/d2851356-9431-480c-a276-75bf7863da7e.svg#d2851356-9431-480c-a276-75bf7863da7e") format("svg");
+}
+@font-face{
+	font-family:"GaramondPrmrW01-LtItDsp";
+	src:url("Fonts/4d4c9a85-02c3-40db-8de4-75ec65cbae1a.eot?#iefix");
+	src:url("Fonts/4d4c9a85-02c3-40db-8de4-75ec65cbae1a.eot?#iefix") format("eot"),url("Fonts/bea0cedf-3bd0-42c5-becd-642a51301818.woff2") format("woff2"),url("Fonts/d13dde86-e95b-4fd5-8ed5-6f0373f2c3c3.woff") format("woff"),url("Fonts/b5361740-09c0-4d6d-abb6-dfba65831f61.ttf") format("truetype"),url("Fonts/0b89bcc7-5ebd-422f-8ab1-f0ca99f01435.svg#0b89bcc7-5ebd-422f-8ab1-f0ca99f01435") format("svg");
+}
+
+
+/* intial fade-in */
+
+body {
+	opacity: 1;
+	transition: 0.5s opacity;
+	hyphens: auto;
+	cursor: url(/img/cursor.svg), auto;
+}
+}
+
+body.fade-out {
+	opacity: 0;
+	transition: none;
+}
+
+
+/* grid */
+
+.grid {
+	display: grid;
+}
+
+header {
+	grid-area: header;
+	text-decoration: none;
+}
+
+main {
+	grid-area: main;
+	padding: 40px 0;
+}
+
+footer {
+	grid-area: footer;
+}
+
+
+/* fullscreen-page */
+
+.page {
+	height: 100vh;
+	width: 100vw;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color: white;;
+}
+
+.hide {
+	display: none;
+}
+
+.rockbottom {
+	z-index: 1;
+}
+
+
+/* styling */
+
+header a {
+	color: blue;
+	text-decoration: none;
+	border-bottom: none !important;
+}
+
+footer a {
+	color: blue;
+	text-decoration: none;
+	border-bottom: none !important;
+}
+
+.gallery {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	z-index: 1000;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+img {
+	padding: 20px;
+	height: auto;
+	width: auto;
+	max-height: 80vh;
+	max-width: 80vw;
+}
+
+h1, h2, h3 {
+	font: 1rem/1.5 sans-serif;
+	color: #303030; /*not quite black*/
+}
+
+.caption {
+	padding: 3rem 20px 5rem 20px;
+	text-align: center;
+}
+
+p, .caption {
+	font-size: 0.85em;
+	line-height: 1.4;
+	color: #303030; /*not quite black*/
+}
+
+ul, header {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	font: 3rem/1.45 "GaramondPrmrW01-LtDspl", serif;
+	color: #303030; /*not quite black*/
+	font-kerning: normal;
+}
+
+li a { 
+	color: rgba(32, 32, 32, 0);
+	text-decoration: none;
+	display: inline-block;
+	line-height: 0.75;
+}
+
+li a:hover {
+	color: #303030;
+}
+
+.italic {
+	font-family: "GaramondPrmrW01-LtItDsp";
+}
+
+.text {
+	height: 100%;
+	max-width: 650px;
+	padding-top: 100px;
+	padding-right: 20px;
+	padding-left: 20px;
+	line-height: 1.4;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+.text a {
+	color: blue;
+	text-decoration: none;
+	border-bottom: none !important;
+}
+
+.text-caption {
+	font-size: 0.75rem;
+	line-height: 1.6;
+	text-decoration: none;
+	padding-bottom: 100px;
+}
+
+
+/* media queries */
+
+@media screen and (min-width: 480px) {
+	.grid {
+		margin: 3rem;
+		display: grid;
+		grid-template-areas: 
+		"header"
+		"main"
+		"footer";
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.grid {
+		margin: 1rem;
+		display: grid;
+		grid-template-areas: 
+		"header"
+		"main"
+		"footer";
+	}
+
+	li a { 
+		color: #303030 !important;
+		font-size: 0.9em;
+		line-height: 80%;
+	}
+
+	h1, h2, h3 {
+	font-size: 0.9em;
+	}
+
+	img {
+		max-width: 100vw;
+		max-height: 100vh;
+	}
+
+}
+
