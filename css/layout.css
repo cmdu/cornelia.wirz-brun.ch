@@ -26,15 +26,17 @@ Imaging with any questions regarding Web Fonts:  http://www.fonts.com
 */
 
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=a978bf93-2b4c-49b5-9f8c-7d929d2e547c");
-@font-face{
-	font-family:"GaramondPrmrW01-LtDspl";
-	src:url("Fonts/af9161e5-0b13-4b71-927d-770bec834cea.eot?#iefix");
-	src:url("Fonts/af9161e5-0b13-4b71-927d-770bec834cea.eot?#iefix") format("eot"),url("Fonts/3cd8b8fc-52bd-41e4-be79-9ee4e974ba5f.woff2") format("woff2"),url("Fonts/2b7c1b22-7378-4dc5-8805-a5fddd317371.woff") format("woff"),url("Fonts/e57b8dda-b8aa-4da5-a7aa-49237ae80e77.ttf") format("truetype"),url("Fonts/d2851356-9431-480c-a276-75bf7863da7e.svg#d2851356-9431-480c-a276-75bf7863da7e") format("svg");
+
+@font-face {
+	font-family: "GaramondPrmrW01-LtDspl";
+	src: url("Fonts/af9161e5-0b13-4b71-927d-770bec834cea.eot?#iefix");
+	src: url("Fonts/af9161e5-0b13-4b71-927d-770bec834cea.eot?#iefix") format("eot"), url("Fonts/3cd8b8fc-52bd-41e4-be79-9ee4e974ba5f.woff2") format("woff2"), url("Fonts/2b7c1b22-7378-4dc5-8805-a5fddd317371.woff") format("woff"), url("Fonts/e57b8dda-b8aa-4da5-a7aa-49237ae80e77.ttf") format("truetype"), url("Fonts/d2851356-9431-480c-a276-75bf7863da7e.svg#d2851356-9431-480c-a276-75bf7863da7e") format("svg");
 }
-@font-face{
-	font-family:"GaramondPrmrW01-LtItDsp";
-	src:url("Fonts/4d4c9a85-02c3-40db-8de4-75ec65cbae1a.eot?#iefix");
-	src:url("Fonts/4d4c9a85-02c3-40db-8de4-75ec65cbae1a.eot?#iefix") format("eot"),url("Fonts/bea0cedf-3bd0-42c5-becd-642a51301818.woff2") format("woff2"),url("Fonts/d13dde86-e95b-4fd5-8ed5-6f0373f2c3c3.woff") format("woff"),url("Fonts/b5361740-09c0-4d6d-abb6-dfba65831f61.ttf") format("truetype"),url("Fonts/0b89bcc7-5ebd-422f-8ab1-f0ca99f01435.svg#0b89bcc7-5ebd-422f-8ab1-f0ca99f01435") format("svg");
+
+@font-face {
+	font-family: "GaramondPrmrW01-LtItDsp";
+	src: url("Fonts/4d4c9a85-02c3-40db-8de4-75ec65cbae1a.eot?#iefix");
+	src: url("Fonts/4d4c9a85-02c3-40db-8de4-75ec65cbae1a.eot?#iefix") format("eot"), url("Fonts/bea0cedf-3bd0-42c5-becd-642a51301818.woff2") format("woff2"), url("Fonts/d13dde86-e95b-4fd5-8ed5-6f0373f2c3c3.woff") format("woff"), url("Fonts/b5361740-09c0-4d6d-abb6-dfba65831f61.ttf") format("truetype"), url("Fonts/0b89bcc7-5ebd-422f-8ab1-f0ca99f01435.svg#0b89bcc7-5ebd-422f-8ab1-f0ca99f01435") format("svg");
 }
 
 
@@ -47,7 +49,8 @@ body {
 	cursor: nw-resize;
 }
 
-li, li a:hover {
+li,
+li a:hover {
 	cursor: se-resize;
 }
 
@@ -83,10 +86,11 @@ footer {
 .page {
 	height: 100vh;
 	width: 100vw;
-	position:absolute;
-	top:0;
-	left:0;
-	background-color: white;;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	;
 }
 
 .hide {
@@ -132,9 +136,12 @@ img {
 	max-width: 80vw;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	font: 1rem/1.5 sans-serif;
-	color: #303030; /*not quite black*/
+	color: #303030;
+	/*not quite black*/
 }
 
 .caption {
@@ -142,13 +149,16 @@ h1, h2, h3 {
 	text-align: center;
 }
 
-p, .caption {
+p,
+.caption {
 	font-size: 0.85em;
 	line-height: 1.4;
-	color: #303030; /*not quite black*/
+	color: #303030;
+	/*not quite black*/
 }
 
-ul, header {
+ul,
+header {
 	display: flex;
 	flex-wrap: wrap;
 	list-style-type: none;
@@ -158,11 +168,12 @@ ul, header {
 
 li {
 	font: 3rem/1.45 "GaramondPrmrW01-LtDspl", serif;
-	color: #303030; /*not quite black*/
+	color: #303030;
+	/*not quite black*/
 	font-kerning: normal;
 }
 
-li a { 
+li a {
 	color: rgba(32, 32, 32, 0);
 	text-decoration: none;
 	display: inline-block;
@@ -211,10 +222,10 @@ li a:hover {
 	.grid {
 		margin: 3rem;
 		display: grid;
-		grid-template-areas: 
-		"header"
-		"main"
-		"footer";
+		grid-template-areas:
+			"header"
+			"main"
+			"footer";
 	}
 }
 
@@ -222,20 +233,22 @@ li a:hover {
 	.grid {
 		margin: 1rem;
 		display: grid;
-		grid-template-areas: 
-		"header"
-		"main"
-		"footer";
+		grid-template-areas:
+			"header"
+			"main"
+			"footer";
 	}
 
-	li a { 
+	li a {
 		color: #303030 !important;
 		font-size: 0.9em;
 		line-height: 80%;
 	}
 
-	h1, h2, h3 {
-	font-size: 0.9em;
+	h1,
+	h2,
+	h3 {
+		font-size: 0.9em;
 	}
 
 	img {
@@ -244,4 +257,3 @@ li a:hover {
 	}
 
 }
-
